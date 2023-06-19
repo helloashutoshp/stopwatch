@@ -1,8 +1,9 @@
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-class stopwatch implements ActionListener {
+class stopp implements ActionListener {
     JFrame frame = new JFrame();
     JButton startb = new JButton("START");
     JButton resetb = new JButton("RESET");
@@ -32,7 +33,7 @@ class stopwatch implements ActionListener {
         }
     });
 
-    stopwatch() {
+    stopp() {
 
         lebel.setText(hr_str + ":" + min_str + ":" + sec_str);
         lebel.setBounds(100, 100, 200, 100);
@@ -96,8 +97,8 @@ class stopwatch implements ActionListener {
     }
 }
 
-public class index {
+public class stopwatch {
     public static void main(String a[]) {
-        stopwatch st = new stopwatch();
+        stopp st = new stopp();
     }
 }
